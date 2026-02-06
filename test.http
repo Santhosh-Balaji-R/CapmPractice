@@ -1,0 +1,22 @@
+###
+get http://localhost:4004/odata/v4/fetch-books/books 
+
+###
+POST http://localhost:4004/odata/v4/fetch-books/books 
+Content-Type: application/json
+
+{
+    "id":"",
+    "name":"Science"
+}
+
+###
+PATCH  http://localhost:4004/odata/v4/fetch-books/books/4
+Content-Type: application/json
+
+{
+    "name":"asbjha"
+}
+
+###
+DELETE http://localhost:4004/odata/v4/fetch-books/books/3
